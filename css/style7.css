@@ -1,0 +1,385 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    /* font-family: '맑은고딕'; */
+    font-size: 14px;
+    color: #444;
+    overflow-x: hidden;
+    height: 2000px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none; 
+    color: #ffffff; 
+   }
+
+/********************************************************
+                        헤더 
+********************************************************/
+
+header {
+    width: 1320px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#headerWrap {
+    background-color: rgb(14, 14, 14);
+    border-bottom: 1px solid #000;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 80px;
+  }
+
+.img {
+    width: 1920px;
+    height: 1000px;
+  }
+
+/* 고정 내비게이션 */
+#head {
+    width: 1320px;
+    margin-left: 300px;
+    margin-top: 16px;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_menu {
+    display: flex;
+    margin-top: -5px;
+    padding-left: 0;
+}
+
+.navbar_menu > li > a {
+    padding: 8px 30px;
+}
+
+.navbar_menu > li > a {
+    font-family: '맑은고딕';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navbar_icons {
+    color: #fff;
+    display: flex;
+    font-size: 30px;
+    margin-top: -3px;
+}
+
+.navbar_icons > li > a {
+    padding: 8px 12px;
+}
+
+
+/* 내비게이션 마우스 오버 시 */
+.navbar_menu > li > a:hover,
+.navbar_menu > li > a:focus,
+.navbar_menu > li > a.on {
+  background-color: rgb(56, 56, 56);
+  border-radius: 6px;
+  color: rgb(138, 171, 233);
+  text-decoration: none;
+}
+
+.navbar_menu > li > a {
+    font-weight: 500;
+    display: table-cell;
+    vertical-align: middle;
+    transition: all 0.4s;
+    text-decoration: none;
+  }
+
+
+/* 내비게이션 아이콘 마우스 오버 시 */
+
+.navbar_icons > li > a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+.navbar_icons > li > a:hover,
+.navbar_icons > li > a:focus,
+.navbar_icons > li > a.on {
+    background-color: rgb(56, 56, 56);
+    border-radius: 6px;
+    color: rgb(138, 171, 233);
+    text-decoration: none;
+  }
+
+.navbar_icons > li > a {
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+    transition: all 0.4s;
+    text-decoration: none;
+  }
+
+
+/* 로고 */
+#logo {
+    position: absolute;
+    margin-top: -32px;
+    margin-left: 20px;
+}
+
+/********************************************************
+                        오디오
+********************************************************/
+.main_audio {
+    position: relative;
+    align-items: center;
+  }
+  
+  .main_audio > audio {
+    position: absolute;
+    right: 34%;
+    margin-top: 23%;
+    transform: translate( -50%, -50% );
+  }
+  
+/********************************************************
+                        영화 소개
+********************************************************/
+
+#intro_Wrap {
+    width: 100%;
+}
+
+.intro_text {
+    position: absolute;
+    font-size: 30px;
+    font-family: 'noto sans KR', serif;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 28%;
+    margin-left: 37.5%;
+}
+
+section {
+    position: relative;
+    top: -10.5%;
+    background-color: rgb(26, 26, 26);
+    height: 2400px; 
+}
+
+/********************************************************
+                인셉션 소개 (이미지 애니메이션)
+********************************************************/
+
+#block7 {
+    margin: 15vh auto;
+    width: 80%;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: wrap;
+}
+
+#block7 img {
+    position: relative;
+    max-width: 80%;
+    box-shadow: 0px 0px 20px 10px #000000;
+}
+
+#block7 img:nth-of-type(1) {
+    margin-top: 80%;
+    margin-left: 10%;
+}
+
+#block7 img:nth-of-type(2) {
+    margin-top: 10%;
+    margin-left: 50%;
+}
+
+/* ========== 페이드 인 애니메이션 ========= */
+/*애니메이션 이름은 다음을 사용하여 설정 JS */
+
+.block:not(.two) {
+    position: relative;
+    top: -45px;
+    z-index: 2;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    visibility: hidden;
+}
+
+#block7 img {
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    visibility: hidden;
+}
+
+#block7 img:nth-child(1) {
+    animation-delay: 0ms;
+    animation-duration: 1000ms;
+}
+
+#block7 img:nth-child(2) {
+	animation-delay: 300ms;
+	animation-duration: 900ms;
+}
+
+@keyframes fade-in-a {
+    0% {
+        top: 35px;
+        opacity: 0.1;
+    }
+        100% {
+        visibility: unset;
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+
+/********************************************************
+                인셉션 소개 (텍스트 애니메이션)
+********************************************************/
+main {
+	text-align: center;
+}
+
+.block {
+	padding: 50px;
+	/*padding top needed for navbar links */
+	padding-top: 50px;
+}
+
+@media (max-width: 780px) {
+	.block:not(.one):not(.two) {
+		text-align: left;
+	}
+	/* .d4 {
+		text-align: center;
+	} */
+}
+
+/* .d1:nth-of-type(odd), .d2:nth-of-type(odd) {
+	background: linear-gradient(to right, #cda330, #73622a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+/* .d1:nth-of-type(even), .d2:nth-of-type(even) {
+	background: linear-gradient(to right, #762FC4 ,black 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.d1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+	font-size: 1.4rem;
+	font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 10%;
+    color: rgb(14, 14, 14);;
+}
+
+.d2 {
+    font-family: 'Noto Sans KR', sans-serif;
+	font-size: 2rem;
+	font-weight: 500;
+    margin-top: -35.4%;
+	padding: 13px 0;
+    color: rgb(255, 255, 255);;
+}
+
+.d3 {
+    font-family: 'Noto Sans KR', sans-serif;
+	font-size: 2rem;
+	font-weight: 500;
+    margin-top: 10%;
+	padding: 13px 0;
+    color: rgb(14, 14, 14);;
+}
+
+.one .d2:first-child {
+	margin-top: 200px;
+	padding-bottom: 0;
+	font-size: 3.5rem;
+  font-weight: 400;
+  -webkit-text-fill-color: black;
+}
+
+.one .d2:nth-child(2) {
+	font-size: 4rem;
+  font-weight: 600;
+  -webkit-text-fill-color: black;
+}
+
+.one .d3 {
+	font-size: 2.5rem;
+	font-weight: 400;
+	margin-bottom: 20vh;
+}
+
+/********************************************************
+                인셉션 소개 마무리 (이미지)
+********************************************************/
+
+#block6 {
+	background: url('https://cdn.pixabay.com/photo/2019/03/03/12/54/fantasy-4031809_960_720.jpg');
+	background-size: 100vw;
+	background-attachment: fixed;
+	background-position-y: -10vh;
+}
+
+#block6 {
+    background-color: #674CAF;	
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+@media (max-width: 425px) {
+	#block6 { 
+		background-size: 170vw; 
+	}
+}
+
+#block6:before, #block6:after {
+	position: absolute;
+	left: 0;
+	content: ' ';
+	width: 100%;
+	height: 12vh;
+	background: white;
+}
+
+#block6:before{
+ 	top: 0;
+	transform-origin: bottom left;
+ }
+
+#block6:after {
+	bottom: 0;
+	transform-origin: top right;
+}
+
+#block6 img[alt="phone6"] {
+	width: 50%;
+	visibility: hidden;
+	height: 120vh;
+}

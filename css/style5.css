@@ -1,0 +1,777 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    /* font-family: '맑은고딕'; */
+    font-size: 14px;
+    color: #444;
+    overflow-x: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none; 
+    color: #ffffff; 
+   }
+
+/********************************************************
+                        헤더 
+********************************************************/
+
+header {
+    width: 1320px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#headerWrap {
+    background-color: rgb(14, 14, 14);
+    border-bottom: 1px solid #000;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 80px;
+  }
+
+.img {
+    width: 1920px;
+    height: 1000px;
+  }
+
+/* 고정 내비게이션 */
+#head {
+    width: 1320px;
+    margin-left: 300px;
+    margin-top: 16px;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_menu {
+    display: flex;
+    margin-top: -5px;
+    padding-left: 0;
+}
+
+.navbar_menu > li > a {
+    padding: 8px 30px;
+}
+
+.navbar_menu > li > a {
+    font-family: '맑은고딕';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navbar_icons {
+    color: #fff;
+    display: flex;
+    font-size: 30px;
+    margin-top: -3px;
+}
+
+.navbar_icons > li > a {
+    padding: 8px 12px;
+}
+
+
+/* 내비게이션 마우스 오버 시 */
+.navbar_menu > li > a:hover,
+.navbar_menu > li > a:focus,
+.navbar_menu > li > a.on {
+  background-color: rgb(56, 56, 56);
+  border-radius: 6px;
+  color: rgb(138, 171, 233);
+  text-decoration: none;
+}
+
+.navbar_menu > li > a {
+    font-weight: 500;
+    display: table-cell;
+    vertical-align: middle;
+    transition: all 0.4s;
+    text-decoration: none;
+  }
+
+
+/* 내비게이션 아이콘 마우스 오버 시 */
+
+.navbar_icons > li > a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+.navbar_icons > li > a:hover,
+.navbar_icons > li > a:focus,
+.navbar_icons > li > a.on {
+    background-color: rgb(56, 56, 56);
+    border-radius: 6px;
+    color: rgb(138, 171, 233);
+    text-decoration: none;
+  }
+
+.navbar_icons > li > a {
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+    transition: all 0.4s;
+    text-decoration: none;
+  }
+
+
+/* 로고 */
+#logo {
+    position: absolute;
+    margin-top: -32px;
+    margin-left: 20px;
+}
+
+/********************************************************
+                      베너 이미지
+********************************************************/
+#main_img {
+    position: relative;
+    margin-top: -1%;
+}
+
+.image {
+    width: 100%;
+}
+
+.banner_box {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border: solid 1px #000;
+    overflow: hidden;
+}
+
+/* 배너 텍스트 */
+
+#banner_text {
+    position: absolute;
+    top: 32%;
+    left: 28.4%;
+    font-family: 'Lora', serif;
+    font-size: 100px;
+    color: rgb(14, 14, 14);
+}
+
+
+/********************************************************
+                   배우 인스타그램
+********************************************************/
+
+.Actor {
+    margin-top: 6%;
+    margin-left: 46.3%;
+  }
+  
+  #Actor_in {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 130px;
+    color: #000;
+  }
+  
+  /* 마우스 오버 시 밑줄 */
+  
+  #Actor_in {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+    color: rgb(24, 24, 24);
+    display:inline-block; 
+    margin:0;
+  }
+  
+  #Actor_in:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1.5px rgb(24, 24, 24);
+    padding-bottom: 8px;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  
+  #Actor_in:hover:after { 
+    transform: scaleX(1); 
+  }
+  
+  
+  /* 마우스 오버 시 색상변경 */
+  
+  #Actor_in > a {
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+  }
+  
+  #Actor_in > a:hover,
+  #Actor_in > a:focus,
+  #Actor_in > a.on {
+    color: rgb(138, 171, 233);
+    text-decoration: none;
+  }
+  
+  #Actor_in > a {
+    font-weight: 500;
+    display: table-cell;
+    vertical-align: middle;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  
+  /* 마우스 오버 시 밑줄 */
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+    color: rgb(0, 0, 0);
+    display:inline-block; 
+    margin:0;
+  }
+  
+  h3:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1.5px rgb(255, 255, 255);
+    padding-bottom: 8px;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  
+  h3:hover:after { 
+    transform: scaleX(1); 
+  }
+  
+  h3.fromLeft:after {  
+    transform-origin:  0% 50%; 
+  }
+  
+  /* 마우스 오버 시 색상변경 */
+  
+  h3 > a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  h3 > a:hover,
+  h3 > a:focus,
+  h3 > a.on {
+    color: rgb(138, 171, 233);
+    text-decoration: none;
+  }
+  
+  h3 > a {
+    font-weight: 500;
+    display: table-cell;
+    vertical-align: middle;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+
+  /********************************************************
+            이미지 마우스 오버 시 정보노출 (디카프리오)
+  ********************************************************/
+  
+  
+  .box-wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+  
+  .box {
+    position: relative;
+    margin-top: 7.3%;
+    margin-left: 10.3%;
+    gap: 10px;
+    width: 200px; 
+    height: 200px;
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(to right, red 0%, orange 100%);
+    border-image-slice: 1;
+    overflow: hidden;
+  }
+  
+  .box img {
+    width: 10.4%;
+    margin-top: -20px;
+  }
+  
+  .box .info {
+    color: #fff;
+    position: absolute; 
+    left: 0; 
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+  }
+  
+  .box:hover .info {
+    opacity: 1;
+  }
+  
+  .box .info h3 {
+    font-size: 24px;
+    font-family: 'Lora', serif;
+    padding-bottom: 0.4em;
+    overflow:hidden;
+    background: linear-gradient(to right top, #861657, #ffa69e);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .box .info p {
+    font-size: 18px;
+    font-family: 'noto sans' serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /********************************************************
+            이미지 마우스 오버 시 정보노출 (머피)
+  ********************************************************/
+  .box2 {
+    position: relative;
+    margin-top: 7.3%;
+    margin-left: 3%;
+    gap: 10px;
+    width: 200px; 
+    height: 200px;
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(to right, red 0%, orange 100%);
+    border-image-slice: 1;
+    overflow: hidden;
+  }
+  
+  .box2 img {
+    width: 10.4%;
+    margin-top: -20px;
+  }
+  
+  .box2 .info2 {
+    color: #fff;
+    position: absolute; 
+    left: 0; 
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+  }
+  
+  .box2:hover .info2 {
+    opacity: 1;
+  }
+  
+  .box2 .info2 h3 {
+    font-size: 24px;
+    font-family: 'Lora', serif;
+    padding-bottom: 0.4em;
+    overflow:hidden;
+    background: linear-gradient(to right top, #861657, #ffa69e);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .box2 .info2 p {
+    font-size: 18px;
+    font-family: 'noto sans' serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /********************************************************
+            이미지 마우스 오버 시 정보노출 (고든)
+  ********************************************************/
+  .box3 {
+    position: relative;
+    margin-top: 7.3%;
+    margin-left: 3%;
+    gap: 10px;
+    width: 200px; 
+    height: 200px;
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(to right, red 0%, orange 100%);
+    border-image-slice: 1;
+    overflow: hidden;
+  }
+  
+  .box3 img {
+    width: 10.4%;
+    margin-top: -20px;
+  }
+  
+  .box3 .info3 {
+    color: #fff;
+    position: absolute; 
+    left: 0; 
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+  }
+  
+  .box3:hover .info3 {
+    opacity: 1;
+  }
+  
+  .box3 .info3 h3 {
+    font-size: 24px;
+    font-family: 'Lora', serif;
+    padding-bottom: 0.4em;
+    overflow:hidden;
+    background: linear-gradient(to right top, #861657, #ffa69e);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .box3 .info3 p {
+    font-size: 18px;
+    font-family: 'noto sans' serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /********************************************************
+            이미지 마우스 오버 시 정보노출 (톰 하디)
+  ********************************************************/
+  .box4 {
+    position: relative;
+    margin-top: 7.3%;
+    margin-left: 3%;
+    gap: 10px;
+    width: 200px; 
+    height: 200px;
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(to right, red 0%, orange 100%);
+    border-image-slice: 1;
+    overflow: hidden;
+  }
+  
+  .box4 img {
+    width: 10.4%;
+    margin-top: -20px;
+  }
+  
+  .box4 .info4 {
+    color: #fff;
+    position: absolute; 
+    left: 0; 
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+  }
+  
+  .box4:hover .info4 {
+    opacity: 1;
+  }
+  
+  .box4 .info4 h3 {
+    font-size: 24px;
+    font-family: 'Lora', serif;
+    padding-bottom: 0.4em;
+    overflow:hidden;
+    background: linear-gradient(to right top, #861657, #ffa69e);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .box4 .info4 p {
+    font-size: 18px;
+    font-family: 'noto sans' serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /********************************************************
+            이미지 마우스 오버 시 정보노출 (엘리엇)
+  ********************************************************/
+  .box5 {
+    position: relative;
+    margin-top: 7.3%;
+    margin-left: 3%;
+    gap: 10px;
+    width: 200px; 
+    height: 200px;
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(to right, red 0%, orange 100%);
+    border-image-slice: 1;
+    overflow: hidden;
+  }
+  
+  .box5 img {
+    width: 10.4%;
+    margin-top: -20px;
+  }
+  
+  .box5 .info5 {
+    color: #fff;
+    position: absolute; 
+    left: 0; 
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+  }
+  
+  .box5:hover .info5 {
+    opacity: 1;
+  }
+  
+  .box5 .info5 h3 {
+    font-size: 24px;
+    font-family: 'Lora', serif;
+    padding-bottom: 0.4em;
+    overflow:hidden;
+    background: linear-gradient(to right top, #861657, #ffa69e);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .box5 .info5 p {
+    font-size: 18px;
+    font-family: 'noto sans' serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /********************************************************
+            이미지 마우스 오버 시 정보노출 (와타나베)
+  ********************************************************/
+  .box6 {
+    position: relative;
+    margin-top: 7.3%;
+    margin-left: 3%;
+    gap: 10px;
+    width: 200px; 
+    height: 200px;
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(to right, red 0%, orange 100%);
+    border-image-slice: 1;
+    overflow: hidden;
+  }
+  
+  .box6 img {
+    width: 10.4%;
+    margin-top: -20px;
+  }
+  
+  .box6 .info6 {
+    color: #fff;
+    position: absolute; 
+    left: 0; 
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+  }
+  
+  .box6:hover .info6 {
+    opacity: 1;
+  }
+  
+  .box6 .info6 h3 {
+    font-size: 24px;
+    font-family: 'Lora', serif;
+    padding-bottom: 0.4em;
+    overflow:hidden;
+    background: linear-gradient(to right top, #861657, #ffa69e);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .box6 .info6 p {
+    font-size: 18px;
+    font-family: 'noto sans' serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  
+  /********************************************************
+                            share
+  ********************************************************/
+  
+  .Share {
+    margin-top: -23.7%;
+    margin-left: 48.1%;
+  }
+  
+  #Share_sns {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 130px;
+    color: #000;
+  }
+  
+  /* 마우스 오버 시 밑줄 */
+  
+  #Share_sns {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+    color: rgb(24, 24, 24);
+    display:inline-block; 
+    margin:0;
+  }
+  
+  #Share_sns:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1.5px rgb(24, 24, 24);
+    padding-bottom: 8px;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  
+  #Share_sns:hover:after { 
+    transform: scaleX(1); 
+  }
+  
+  
+  /* 마우스 오버 시 색상변경 */
+  
+  #Share_sns > a {
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+  }
+  
+  #Share_sns > a:hover,
+  #Share_sns > a:focus,
+  #Share_sns > a.on {
+    color: rgb(138, 171, 233);
+    text-decoration: none;
+  }
+  
+  #Share_sns > a {
+    font-weight: 500;
+    display: table-cell;
+    vertical-align: middle;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  
+  .Share_icons {
+    position: absolute;
+    display: flex;
+    font-size: 60px;
+    margin-top: 90px;
+    margin-left: -85px;
+  }
+  
+  .Share_icons > li > a {
+    padding: 8px 15px;
+  }
+  
+  
+  /* 쉐어 아이콘 마우스 오버 시 */
+  
+  .Share_icons > li > a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .Share_icons > li > a:hover,
+  .Share_icons > li > a:focus,
+  .Share_icons > li > a.on {
+    background: linear-gradient(to right top, #861657, #ffa69e);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  
+  .Share_icons > li > a {
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+    transition: all 0.4s;
+    text-decoration: none;
+  }
+
+/********************************************************
+                          푸터
+********************************************************/
+footer {
+    width: 100%;
+    margin-top: 17%;
+    background-color: #2c2a29;
+  }
+  
+  #footer_box {
+    width: 1320px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: -30px;
+  }
+  
+  #footer_logo {
+    float: right;
+    margin-top: 3.3%;
+  }
+  
+  #footer_company {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  
+  #address {
+    font-family: '맑은고딕';
+    float: left;
+    margin-left: 4%;
+    margin-top: 2.3%;
+    color: white;
+  }
+  
+  footer ul {
+    font-size: 13px;
+    line-height: 20px;
+  }

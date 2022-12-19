@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYNCOPE</title>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+          <!-- css -->
+          <link rel="stylesheet" href="./css/style.css">
+          <!-- font noto sans -->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+          <!-- font lora -->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <!-- header -->
+    <header>
+      <div id="headerWrap">
+        <div id="head">
+           <!-- 내비게이션 -->
+            <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img width="140" src="./img/logo syncopy.png" alt=""></a>
+            </div>
+
+            <ul class="navbar_menu">
+              <li><a href="sub2.html">Christopher Nolan</a></li>
+              <li><a href="sub3.html">His work</a></li>
+              <li><a href="sub4.html">Inception</a></li>
+              <li><a href="sub5.html">Characters</a></li>
+              <li><a href="sub7.html">Finish</a></li>
+            </ul>
+
+            <ul class="navbar_icons">
+                <li>
+                  <a href="https://www.instagram.com/syncopyofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/SyncopyOfficial" target="_blank"><i class="fa-brands fa-facebook"></a></i>
+                </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- 영역 이동 -->
+    <div class="content">
+      <section class="banner-wrap">
+        <!-- 버튼 -->
+          <input type="radio" name="banner" id="sel1" class="banner-input1" checked>
+          <label for="sel1" class="btn1" id="btn"></label>
+    
+          <input type="radio" name="banner" id="sel2" class="banner-input2">
+          <label for="sel2" class="btn2" id="btn"></label>
+
+          <input type="radio" name="banner" id="sel3" class="banner-input3">
+          <label for="sel3" class="btn3" id="btn"></label>
+        <!-- 배너이미지 -->
+        <ul class="banner">
+          <li>
+            <a href="sub3.html"><img class="img" src="./img/dunkirk.jpg" alt=""></a>
+          </li>
+          <li>
+            <a href="sub3.html"><img class="img" src="./img/Tenet_Movie.jpg" alt=""></a>
+          </li>
+          <li>
+            <a href="sub3.html"><img class="img" src="./img/interstellar2.jpg" alt=""></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+        <!-- 마우스 휠 효과 -->
+        <a href="#" class="scroll-down">
+          <div class="scroll">
+            <span class="scroll-dot"></span>
+          </div>
+          <div class="arrow-down"></div>
+        </a>
+
+
+ 
+      <!-- 영역 이동2 -->
+      <div class="content">
+        <div class="cont">
+          <h3 id="text_Works" class="fromLeft"><a href="sub3.html">Christopher Works</a></h3> 
+            <!-- 더보기 -->
+            <div id="more"><a href="sub3.html">View more</a></div>
+          <!-- 이미지 슬라이드 -->
+            <div class="slider">
+              <div class="slider-inner">
+                <!-- 이미지 -->
+                <div>
+                  <a href="#"><img class="img_radius" width="303" src="./img/oppen heimer.jpg" alt=""></a>
+                    <ul class="movie_intro">
+                      <li>Oppen heimer <span>|</span> 2023</li>
+                      <li class="movie_Explanation">Overview : drama <span>|</span> USA, England</li>
+                      <li class="movie_star">Coming Soon : 2023.07</li>
+                    </ul>
+                    <div id="Coming_Soon">Coming Soon</div>
+                </div>
+
+                <div>
+                  <img class="img_radius" width="337" src="./img/batman begins.jpg" alt="">
+                    <ul class="movie_intro">
+                      <li>Batman Begins <span>|</span> 2005</li>
+                      <li class="movie_Explanation">Overview : action <span>|</span> USA</li>
+                      <li class="movie_Explanation">Running time : 139 minutes</li>
+                      <li class="movie_star">Star rating : <span>★</span></li>
+                        <div class="movie_rating">9.17</div>
+                    </ul>
+                </div>
+
+                <div>
+                  <img class="img_radius" width="301.6" src="./img/dark knight.jpg" alt="">
+                    <ul class="movie_intro">
+                      <li>The Dark Knight <span>|</span> 2008</li>
+                      <li class="movie_Explanation">Overview : action <span>|</span> USA</li>
+                      <li class="movie_Explanation">Running time : 152 minutes</li>
+                      <li class="movie_star">Star rating : <span>★</span></li>
+                        <div class="movie_rating">9.65</div>
+                    </ul>
+                </div>
+
+                <div>
+                  <img class="img_radius" width="305.3" src="./img/dark knight rises.jpg" alt="">
+                    <ul class="movie_intro">
+                      <li>The Dark Knight Rises <span>|</span> 2012</li>
+                      <li class="movie_Explanation">Overview : action <span>|</span> USA, England</li>
+                      <li class="movie_Explanation">Running time : 164 minutes</li>
+                      <li class="movie_star">Star rating : <span>★</span></li>
+                        <div class="movie_rating">9.56</div>
+                    </ul>
+                </div>
+
+                <div>
+                  <img class="img_radius" width="302" src="./img/inception poster.jpg" alt="">
+                    <ul class="movie_intro">
+                      <li>Inception <span>|</span> 2010</li>
+                      <li class="movie_Explanation">Overview : action <span>|</span> USA, England</li>
+                      <li class="movie_Explanation">Running time : 147 minutes</li>
+                      <li class="movie_star">Star rating : <span>★</span></li>
+                        <div class="movie_rating">9.60</div>
+                    </ul>
+                </div>
+
+                <div>
+                  <img class="img_radius" width="310" src="./img/dunkirk poster.jpg" alt="">
+                    <ul class="movie_intro">
+                      <li>Dunkirk <span>|</span> 2017</li>
+                      <li class="movie_Explanation">Overview : action <span>|</span> USA, England, France</li>
+                      <li class="movie_Explanation">Running time : 152 minutes</li>
+                      <li class="movie_star">Star rating : <span>★</span></li>
+                        <div class="movie_rating">8.61</div>
+                    </ul>
+                </div>
+
+                <div>
+                  <img class="img_radius" width="305" src="./img/tenet poster.jpg" alt="">
+                    <ul class="movie_intro">
+                      <li>TENET <span>|</span> 2020</li>
+                      <li class="movie_Explanation">Overview : action <span>|</span> USA, England</li>
+                      <li class="movie_Explanation">Running time : 150 minutes</li>
+                      <li class="movie_star">Star rating : <span>★</span></li>
+                        <div class="movie_rating">8.74</div>
+                    </ul>
+                </div>
+
+                <div>
+                  <img class="img_radius" width="310" src="./img/man.jpg" alt="">
+                    <ul class="movie_intro">
+                      <li>Man of Steel <span>|</span> 2013</li>
+                      <li class="movie_Explanation">Overview : action <span>|</span> USA, Canada</li>
+                      <li class="movie_Explanation">Running time : 143 minutes</li>
+                      <li class="movie_star">Star rating : <span>★</span></li>
+                        <div class="movie_rating">7.93</div>
+                    </ul>
+                </div>
+
+                <div>
+                  <img class="img_radius"  width="306" src="./img/interstellar poster.jpg" alt="">
+                    <ul class="movie_intro">
+                      <li>Interstellar <span>|</span> 2014</li>
+                      <li class="movie_Explanation">Overview : SF <span>|</span> USA, England</li>
+                      <li class="movie_Explanation">Running time : 169 minutes</li>
+                      <li class="movie_star">Star rating : <span>★</span></li>
+                        <div class="movie_rating">9.12</div>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- 영역 이동3 -->
+      <div class="content">
+        <div class="time_line">
+          <h3 id="text_time_line" class="fromLeft2"><a href="sub2.html">Christopher's Life</a></h3>
+        </div>
+          <div id="time_line_box">
+            <div id="img_fadein">
+              <img src="./img/life.png" alt="">
+            </div>
+          </div>
+      </div>
+      <!-- 영역 이동4 -->
+      <div class="content">
+          <div class="Actor">
+            <h3 id="Actor_in" class="fromLeft2"><a href="#">Actor's Instagram</a></h3>
+          </div>
+          <!-- 마우스 오버 시 정보 노출 -->
+          <div class="box-wrap">
+                <div class="box">
+                  <a href="#">
+                    <div class="img">
+                      <img src="./img/dicaprio.jpg" alt="Hover Effect">
+                    </div>
+                  <div class="info">
+                    <h3>Instagram</h3>
+                    <p>Leonardo DiCaprio</p>
+                  </div>
+                  </a>
+                </div>
+
+             
+                <div class="box2">
+                  <a href="#">
+                    <div class="img">
+                      <img src="./img/Cillian Murphy.jpg" alt="Hover Effect">
+                    </div>
+                    <div class="info2">
+                      <h3>Instagram</h3>
+                      <p>Cillian Murphy</p>
+                    </div>
+                  </a>
+                </div>
+              
+             
+                <div class="box3">
+                  <a href="#">
+                    <div class="img">
+                      <img src="./img/Joseph Gordon-Levitt.jpg" alt="Hover Effect">
+                    </div>
+                    <div class="info3">
+                      <h3>Instagram</h3>
+                      <p>Joseph Gordon-Levitt</p>
+                    </div>
+                  </a>
+                </div>
+              
+              
+                <div class="box4">
+                  <a href="#">
+                    <div class="img">
+                      <img src="./img/Tom Hardy.jpg" alt="Hover Effect">
+                    </div>
+                    <div class="info4">
+                      <h3>Instagram</h3>
+                      <p>Tom Hardy</p>
+                    </div>
+                  </a>
+                </div>
+
+
+                <div class="box5">
+                  <a href="#">
+                    <div class="img">
+                      <img src="./img/Elliot Page.jpg" alt="Hover Effect">
+                    </div>
+                    <div class="info5">
+                      <h3>Instagram</h3>
+                      <p>Elliot Page</p>
+                    </div>
+                  </a>
+                </div>
+              
+              
+                <div class="box6">
+                  <a href="#">
+                    <div class="img">
+                      <img src="./img/Ken Watanabe.jpg" alt="Hover Effect">
+                    </div>
+                    <div class="info6">
+                      <h3>Instagram</h3>
+                      <p>Ken Watanabe</p>
+                    </div>
+                  </a>
+                </div>
+            </div>
+
+            <div class="Share">
+              <h3 id="Share_sns" class="fromLeft2"><a href="#">Share</a></h3>
+              <ul class="Share_icons">
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></a></i>
+                </li>
+                <li>
+                  <a href="https://twitter.com/?lang=ko" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+        </div>
+<!-- 푸터 -->
+    <footer>
+      <div id="footer_box">
+        <div id="footer_logo">
+            <a href="https://www.oppenheimer.co.kr/" target="_blank"><img width="180" src="./img/logo syncopy.png" alt=""></a>
+        </div>
+          <ul id="address">
+            <li id="footer_company">COMPANY | CAREERS | CONTACT US | MEDIA CENTER | PRIVACY & LEGAL | SITEMAP</li>
+            <li>Los Angeles, California &nbsp;&nbsp;&nbsp;Founding: Christopher Nolan</li>
+            <li>TEL: 010-8081-1925 E-mail: pyeonae@naver.com</li>
+            <li>Copyright (c) 2001 Syncope inc.All Rights Reserved.</li>
+          </ul>
+      </div>
+    </footer>
+    
+     <!-- js -->
+     <script src="./js/autobanner.js"></script>
+     <script src="./js/pagemotion.js"></script>
+     <script src="./js/slider.js"></script>
+     <!-- fontawesome -->
+     <script src="https://kit.fontawesome.com/629e6851c5.js" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+    <!-- <section> 
+      <div class="slidebox">
+        <input type="radio" name="slide" id="sel1" checked>
+        <input type="radio" name="slide" id="sel2">
+        <input type="radio" name="slide" id="sel3">
+        <input type="radio" name="slide" id="sel4">
+          <ul class="slidelist">
+            <li class="slideitem">
+              <div>
+                <label for="sel4" class="left"></label>
+                <label for="sel2" class="right"></label>
+                <a href="#"><img class="main_img" src="./img/dunkirk.jpg"></a>
+              </div>
+            </li>
+
+            <li class="slideitem">
+              <div>
+                <label for="sel1" class="left"></label>
+                <label for="sel3" class="right"></label>
+                <a href="#"><img class="main_img" src="./img/Tenet_Movie.jpg"></a>
+              </div>
+            </li>
+
+            <li class="slideitem">
+              <div>
+                <label for="sel2" class="left"></label>
+                <label for="sel4" class="right"></label>
+                <a href="#"><img class="main_img" src="./img/interstellar2.jpg"></a>
+              </div>
+            </li>
+
+            <li class="slideitem">
+              <div>
+                <label for="sel3" class="left"></label>
+                <label for="sel1" class="right"></label>
+                <a href="#"><img class="main_img" src="./img/dunkirk.jpg"></a>
+              </div>
+            </li>
+          </ul>
+    </section>     -->
